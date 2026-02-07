@@ -4,11 +4,11 @@
 using namespace std;
 
 struct Restaurant {
-        string name;
-        string address;
-        double rating;
-        int hours; 
-        int cost;
+    string name;
+    string address;
+    double rating;
+    int hours; 
+    int cost;
 };
     
 //prototypes
@@ -19,10 +19,15 @@ int main() {
     //calls functions
     Restaurant r = tempStruct();
     outputStruct(r);
-    
+    Restaurant s = tempStruct();
+    outputStruct(s);
+    Restaurant u = tempStruct();
+    outputStruct(u);
+    Restaurant v = tempStruct();
+    outputStruct(v);
+   
     return 0;
 }
-
     
 Restaurant tempStruct() {
     //creates temporary struct
@@ -38,15 +43,17 @@ Restaurant tempStruct() {
     cin >> t.hours;
     cout << "What is the cost of the Restaurant?" << endl;
     cin >> t.cost;
+    cin.ignore();
+    cout << endl;
     //returns struct to main program
     return t; 
 }
 
 void outputStruct(Restaurant o) {
     //outputs structs data
-    cout << "\n" << o.name << endl;
+    cout << o.name << endl;
     cout << o.address << endl;
     cout << o.rating << endl;
     cout << o.hours << endl;
-    cout << o.cost << endl;
+    cout << o.cost << endl << endl;
 }
