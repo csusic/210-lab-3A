@@ -42,11 +42,11 @@ Restaurant tempStruct() {
     return t; 
 }
 
-void outputStruct(Restaurant) {
+void outputStruct(Restaurant o) {
     //outputs structs data
-    cout << "name << endl;
-    cout << address << endl;
-    cout << rating << endl;
-    cout << hours << endl;
-    cout << cost << endl;
+    cout << "\n" << o.name << endl;
+    cout << o.address << endl;
+    cout << o.rating << endl;
+    cout << o.hours << endl;
+    cout << o.cost << endl;
 }
