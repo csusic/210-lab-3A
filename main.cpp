@@ -24,6 +24,16 @@ int main() {
 void tempStruct() {
     //creates temporary struct
     //receive user input to populate struct
+    cout << "What is the Restaurant's name?" << endl;
+    cin >> name;
+    cout << "What is the Restaurant's address?" << endl;
+    cin >> address;
+    cout << "What is the Restaurant's rating?" << endl;
+    cin >> rating;
+    cout << "What are the Restaurant's hours?" << endl;
+    cin >> hours;
+    cout << "What is the cost of the Restaurant?" << endl;
+    cin >> cost;
     //returns struct to main program
 }
 
