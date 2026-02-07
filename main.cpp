@@ -4,27 +4,28 @@
 using namespace std;
 
 struct Restaurant {
-    string name;
-    string address;
-    double rating;
-    int hours;
-    int cost;
+        string name;
+        string address;
+        double rating;
+        int hours; 
+        int cost;
 };
-
+    
 //prototypes
 Restaurant tempStruct();
-void outputStruct();
+//void outputStruct();
 
 int main() {
-    //calls functions
-    tempStruct();
+    Restaurant r; 
+    //calls function
+    r = tempStruct();
     
     return 0;
 }
-
+    
 Restaurant tempStruct() {
     //creates temporary struct
-    Restaurant t;
+    Restaurant t; 
     //receive user input to populate struct
     cout << "What is the Restaurant's name?" << endl;
     getline(cin, t.name);
@@ -38,8 +39,4 @@ Restaurant tempStruct() {
     cin >> t.cost;
     //returns struct to main program
     return t; 
-}
-
-void outputStruct() {
-    //outputs struct data
 }
