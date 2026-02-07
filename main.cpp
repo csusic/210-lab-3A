@@ -6,7 +6,7 @@ using namespace std;
 struct Restaurant {
     string name;
     string address;
-    double ratingl
+    double rating;
     int hours;
     int cost;
 };
@@ -23,18 +23,20 @@ int main() {
 
 void tempStruct() {
     //creates temporary struct
+    Restaurant t;
     //receive user input to populate struct
     cout << "What is the Restaurant's name?" << endl;
-    cin >> name;
+    getline(cin, t.name);
     cout << "What is the Restaurant's address?" << endl;
-    cin >> address;
+    getline(cin, t.address);
     cout << "What is the Restaurant's rating?" << endl;
-    cin >> rating;
+    cin >> t.rating;
     cout << "What are the Restaurant's hours?" << endl;
-    cin >> hours;
+    cin >> t.hours;
     cout << "What is the cost of the Restaurant?" << endl;
-    cin >> cost;
+    cin >> t.cost;
     //returns struct to main program
+    return t; 
 }
 
 void outputStruct() {
