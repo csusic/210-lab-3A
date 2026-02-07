@@ -13,15 +13,16 @@ struct Restaurant {
     
 //prototypes
 Restaurant tempStruct();
-//void outputStruct();
+void outputStruct(Restaurant);
 
 int main() {
-    Restaurant r; 
-    //calls function
-    r = tempStruct();
+    //calls functions
+    Restaurant r = tempStruct();
+    outputStruct(r);
     
     return 0;
 }
+
     
 Restaurant tempStruct() {
     //creates temporary struct
@@ -39,4 +40,13 @@ Restaurant tempStruct() {
     cin >> t.cost;
     //returns struct to main program
     return t; 
+}
+
+void outputStruct(Restaurant) {
+    //outputs structs data
+    cout << "name << endl;
+    cout << address << endl;
+    cout << rating << endl;
+    cout << hours << endl;
+    cout << cost << endl;
 }
