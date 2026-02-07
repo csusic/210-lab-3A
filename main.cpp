@@ -12,16 +12,17 @@ struct Restaurant {
 };
 
 //prototypes
-void tempStruct();
+Restaurant tempStruct();
 void outputStruct();
 
 int main() {
     //calls functions
+    tempStruct();
     
     return 0;
 }
 
-void tempStruct() {
+Restaurant tempStruct() {
     //creates temporary struct
     Restaurant t;
     //receive user input to populate struct
